@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+.centralization {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+:root {
+  --brand-firt: #e37c73;
+  --brand-second: #dfb7af;
+  --brand-tirt: #a57f6c;
+  --brand-fort: #fbda97;
+  --brand-fivet: #1f8963;
+}
+
+.background-top {
+  width: 100%;
+  height: 1090px;
+  background-color: var(--brand-firt);
+  background-image: url("../image/formas/linhas-pontilhadas.png"),
+    url("../image/formas/linhas-onda.png"),
+    url("../image/formas/gradiente-right.png"),
+    url("../image/formas/gradiente-down.png");
+  background-repeat: no-repeat;
+  background-position-y: 530px, 570px, 570px, 0;
+  background-position-x: 0, 0, 0, 100%;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    margin-top: 70px;
+    font-size: 36px;
+    color: white;
+  }
+}
+nav {
+  margin-top: 70px;
+  width: 900px;
+  font-size: 24px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      width: 123px;
+      height: 49px;
+
+      font-size: 16px;
+      font-weight: 800;
+
+      color: white;
+      background-color: transparent;
+
+      border: 1px solid white;
+
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: white;
+
+      color: var(--brand-firt);
+
+      transition: 0.2s;
+    }
+  }
+  li {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      font-weight: 800;
+      transition: 0.2s;
+    }
+  }
+}
+.call-to-action {
+  margin-top: 180px;
+  h1 {
+    font-size: 68px;
+    font-weight: 700;
+    color: white;
+  }
+  p {
+    font-size: 24px;
+    color: white;
+  }
+  button {
+    width: 204px;
+    height: 70px;
+    margin-top: 34px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: white;
+    color: black;
+    border: 0;
+
+    cursor: pointer;
+  }
+  button:hover {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    transition: 0.2s;
+  }
+}
+.content1 {
+  display: flex;
+  justify-content: space-between;
+}
+.image-top {
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  img {
+    margin-right: 60px;
+  }
+  span {
+    position: absolute;
+    right: -60px;
+  }
+  span :nth-last-child(1) {
+    position: absolute;
+    right: 660px;
+    top: 600px;
+  }
+}
+
+.new-colection {
+  margin-top: 140px;
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 83px;
+  }
+  p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+.cards-r {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-roupas {
+  width: 475px;
+  height: 546px;
+  display: flex;
+
+  align-items: center;
+  align-items: flex-end;
+
+  padding-bottom: 20px;
+
+  background-image: url("../image/moças/moça2.png");
+  background-repeat: no-repeat;
+
+  button {
+    width: 376px;
+    height: 104px;
+
+    margin: 0 auto;
+
+    border: 0;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+  }
+}
+.card-roupas:nth-child(2) {
+  background-image: url("../image/moças/moça3.png");
+  background-repeat: no-repeat;
+}
+.card-roupas:nth-child(3) {
+  background-image: url("../image/moças/moça4.png");
+  background-repeat: no-repeat;
+}
+.new-colection-and {
+  height: 801px;
+
+  margin-top: 95px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  background-image: url("../image/moças/moças-lado-lado.png");
+  background-repeat: no-repeat;
+}
+.best-fashion {
+  h1 {
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 83px;
+  }
+  p {
+    margin-top: 56px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  margin-bottom: 102px;
+}
+.dados-fashin {
+  width: 973px;
+  height: 216px;
+
+  background-color: white;
+  display: flex;
+  align-items: center;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.dado {
+  width: 324px;
+  text-align: center;
+
+
+  h1 {
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 83px;
+  }
+  p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+.dado:nth-child(1) {
+  border-right: 1px solid black;
+}
+.dado:nth-child(2) {
+  border-right: 1px solid black;
+}
+.best-seller {
+  height: 988px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 145px;
+
+  background-color: var(--brand-tirt);
+  background-image: url("../image/formas/linhas-pontilhadas.png"),
+    url("../image/formas/linhas-onda-white.png");
+  background-repeat: no-repeat;
+
+  background-position-x: 0px, 0px;
+  background-position-y: 500px, 500px;
+}
+.best-s {
+  h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 83px;
+  }
+  p {
+    margin-top: 48px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: white;
+  }
+  button {
+    margin-top: 48px;
+
+    width: 204px;
+    height: 70px;
+
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    background-color: white;
+    border: 0;
+
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: transparent;
+
+    border: 1px solid white;
+
+    color: white;
+
+    transition: 0.2s;
+  }
+}
+.products {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+}
+.prod {
+  width: 473px;
+  height: 546px;
+  background-image: url("../image/moças/moça5.png");
+  display: flex;
+  align-items: flex-end;
+}
+.prod:nth-child(2) {
+  background-image: url("../image/moças/moça6.png");
+}
+.color {
+  padding: 20px;
+  width: 473px;
+  height: 161px;
+  background-color: white;
+  span {
+    display: flex;
+    gap: 0 35px;
+    margin-top: 10px;
+    s {
+      color: rgba(0, 0, 0, 0.23);
+    }
+  }
+  h3 {
+    margin-top: 10px;
+  }
+}
