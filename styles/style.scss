@@ -237,7 +237,6 @@ nav {
   width: 324px;
   text-align: center;
 
-
   h1 {
     font-weight: 700;
     font-size: 68px;
@@ -330,6 +329,54 @@ nav {
   padding: 20px;
   width: 473px;
   height: 161px;
+  background-color: white;
+  span {
+    display: flex;
+    gap: 0 35px;
+    margin-top: 10px;
+    s {
+      color: rgba(0, 0, 0, 0.23);
+    }
+  }
+  h3 {
+    margin-top: 10px;
+  }
+}
+.aur-product {
+  margin-top: 120px;
+  h1 {
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 83px;
+    
+    text-align: center;
+  }
+}
+.menu-product {
+  display: flex;
+  justify-content: space-evenly;
+  nav {
+    a {
+      color: black;
+    }
+  }
+}
+.produtos1{
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.itens {
+  width: 347px;
+  height: 441px;
+  background-image: url("../image/moças/batom.png");
+  display: flex;
+  align-items: flex-end;
+}
+.caixa {
+  padding: 20px;
+  width: 347px;
+  height: 130px;
   background-color: white;
   span {
     display: flex;
