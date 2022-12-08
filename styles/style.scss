@@ -340,7 +340,7 @@ nav {
   }
   h3 {
     margin-top: 10px;
-    a{
+    a {
       text-decoration: none;
       color: black;
     }
@@ -352,7 +352,7 @@ nav {
     font-weight: 700;
     font-size: 68px;
     line-height: 83px;
-    
+
     text-align: center;
   }
 }
@@ -365,14 +365,14 @@ nav {
     }
   }
 }
-.produtos1{
+.produtos1 {
   width: 1500px;
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
   margin-top: 175px;
 }
-.produtos2{
+.produtos2 {
   width: 1500px;
   display: flex;
   justify-content: space-evenly;
@@ -387,13 +387,13 @@ nav {
   align-items: flex-end;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.itens:nth-child(2){
+.itens:nth-child(2) {
   background-image: url("../image/moças/bolsa.png");
 }
-.itens:nth-child(3){
+.itens:nth-child(3) {
   background-image: url("../image/moças/batom.png");
 }
-.itens:nth-child(4){
+.itens:nth-child(4) {
   background-image: url("../image/moças/relogio.png");
 }
 .itens2 {
@@ -404,13 +404,13 @@ nav {
   align-items: flex-end;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.itens2:nth-child(2){
+.itens2:nth-child(2) {
   background-image: url("../image/moças/oculos.png");
 }
-.itens2:nth-child(3){
+.itens2:nth-child(3) {
   background-image: url("../image/moças/sapatilha.png");
 }
-.itens2:nth-child(4){
+.itens2:nth-child(4) {
   background-image: url("../image/moças/gargantilha.png");
 }
 .caixa {
@@ -428,9 +428,225 @@ nav {
   }
   h3 {
     margin-top: 10px;
-    a{
+    a {
       text-decoration: none;
       color: black;
     }
   }
+}
+.background-day-of {
+  width: 100%;
+  height: 868px;
+  margin-top: 180px;
+  background-color: var(--brand-firt);
+
+  background-image: url("../image/formas/gradiente-right.png"),
+    url("../image/formas/gradiente-down.png");
+  background-repeat: no-repeat;
+  background-position-y: 570px, 0;
+  background-position-x: 0, 100%;
+}
+.deal-of-day {
+  display: flex;
+  justify-content: space-between;
+}
+.day-of-wold {
+  margin-top: 150px;
+  h1 {
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 83px;
+
+    color: #ffffff;
+  }
+  p {
+    margin-top: 35px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+
+    color: #ffffff;
+  }
+
+  button {
+    margin-top: 48px;
+
+    width: 204px;
+    height: 70px;
+
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    background-color: black;
+    border: 0;
+
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: transparent;
+
+    border: 1px solid white;
+
+    color: white;
+
+    transition: 0.2s;
+  }
+}
+.day-quadrado {
+  display: flex;
+  margin-top: 64px;
+}
+.quad {
+  width: 144px;
+  height: 135px;
+  margin-right: 10px;
+  text-align: center;
+  padding-top: 35px;
+  background-color: white;
+  h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: black;
+  }
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166.4%;
+    color: black;
+  }
+}
+.mocaOculos {
+  margin-top: 72px;
+  position: relative;
+  display: inline-block;
+
+  span {
+    position: absolute;
+    right: -80px;
+    top: 60px;
+  }
+  span :nth-last-child(1) {
+    position: absolute;
+    right: 600px;
+    top: 600px;
+  }
+}
+.background-footer {
+  width: 100%;
+  height: 656px;
+  background-color: var(--brand-tirt);
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  h2 {
+    margin-top: 27px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+
+    color: white;
+  }
+}
+.container-footer {
+  order: 1;
+  margin-top: 76px;
+}
+.image-footer {
+  order: 0;
+  position: relative;
+  bottom: 70px;
+}
+.pesqui {
+  display: flex;
+
+  width: 804px;
+  height: 86px;
+  input {
+    width: 500px;
+    height: 86px;
+    order: 0;
+
+    padding-left: 20px;
+
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 166.4%;
+
+    color: white;
+  }
+  ::placeholder {
+    color: white;
+  }
+  button {
+    width: 392px;
+    height: 86px;
+
+    position: relative;
+    right: 100px;
+    order: 1;
+
+    border: 0;
+    border-radius: 50px;
+    background-color: #d9d9d9;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 166.4%;
+
+    cursor: pointer;
+  }
+}
+.pas {
+  width: 700px;
+  display: flex;
+
+  text-align: start;
+  justify-content: space-between;
+
+  margin-top: 27px;
+  h3 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 166.4%;
+
+    color: #ffffff;
+  }
+  p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 166.4%;
+
+    color: white;
+  }
+}
+.line-footer {
+  width: 700px;
+  margin-top: 37px;
+  border: 1px solid white;
+}
+.the-and {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  h4 {
+ 
+    color: white;
+  }
+}
+.redes-sociais {
+  display: flex;
+  gap: 30px;
 }
