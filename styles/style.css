@@ -150,13 +150,15 @@ nav li a:hover {
 .cards-r {
   margin-top: 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card-roupas {
   width: 475px;
   height: 546px;
   display: flex;
+  margin: 10px;
   align-items: center;
   align-items: flex-end;
   padding-bottom: 20px;
@@ -198,7 +200,9 @@ nav li a:hover {
   align-items: flex-end;
   justify-content: flex-end;
   background-image: url("../image/moças/moças-lado-lado.png");
+  background-size: 650px;
   background-repeat: no-repeat;
+  background-position-y: 85px;
 }
 
 .best-fashion {
@@ -219,9 +223,11 @@ nav li a:hover {
 .dados-fashin {
   width: 973px;
   height: 216px;
-  background-color: white;
+  margin: 0;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  background-color: white;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -249,17 +255,21 @@ nav li a:hover {
   border-right: 1px solid black;
 }
 
-.best-seller {
-  height: 988px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 145px;
+.best-seller-background {
+  width: 100%;
   background-color: var(--brand-tirt);
   background-image: url("../image/formas/linhas-pontilhadas.png"), url("../image/formas/linhas-onda-white.png");
   background-repeat: no-repeat;
   background-position-x: 0px, 0px;
   background-position-y: 500px, 500px;
+}
+
+.best-seller {
+  height: 988px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 145px;
 }
 
 .best-s h1 {
@@ -296,16 +306,16 @@ nav li a:hover {
 
 .products {
   display: flex;
-  justify-content: space-between;
-  width: 1000px;
+  justify-content: flex-end;
 }
 
 .prod {
   width: 473px;
   height: 546px;
-  background-image: url("../image/moças/moça5.png");
   display: flex;
   align-items: flex-end;
+  margin: 10px;
+  background-image: url("../image/moças/moça5.png");
 }
 
 .prod:nth-child(2) {
@@ -353,27 +363,19 @@ nav li a:hover {
 }
 
 .produtos1 {
-  width: 1500px;
   display: flex;
-  justify-content: space-evenly;
-  margin: 0 auto;
+  justify-content: center;
   margin-top: 175px;
-}
-
-.produtos2 {
-  width: 1500px;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0 auto;
-  margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .itens {
   width: 347px;
   height: 441px;
-  background-image: url("../image/moças/perfume.png");
   display: flex;
   align-items: flex-end;
+  margin: 10px;
+  background-image: url("../image/moças/perfume.png");
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -389,24 +391,19 @@ nav li a:hover {
   background-image: url("../image/moças/relogio.png");
 }
 
-.itens2 {
-  width: 347px;
-  height: 441px;
+.itens:nth-child(5) {
   background-image: url("../image/moças/pincel-make.png");
-  display: flex;
-  align-items: flex-end;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.itens2:nth-child(2) {
+.itens:nth-child(6) {
   background-image: url("../image/moças/oculos.png");
 }
 
-.itens2:nth-child(3) {
+.itens:nth-child(7) {
   background-image: url("../image/moças/sapatilha.png");
 }
 
-.itens2:nth-child(4) {
+.itens:nth-child(8) {
   background-image: url("../image/moças/gargantilha.png");
 }
 
@@ -445,7 +442,7 @@ nav li a:hover {
 
 .deal-of-day {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .day-of-wold {
@@ -528,13 +525,13 @@ nav li a:hover {
 
 .background-footer {
   width: 100%;
-  height: 656px;
+  height: 100%;
   background-color: var(--brand-tirt);
 }
 
 .footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .footer h2 {
   margin-top: 27px;
@@ -553,6 +550,9 @@ nav li a:hover {
   order: 0;
   position: relative;
   bottom: 70px;
+}
+.image-footer img {
+  width: 500px;
 }
 
 .pesqui {
@@ -620,7 +620,7 @@ nav li a:hover {
 }
 
 .line-footer {
-  width: 700px;
+  width: 740px;
   margin-top: 37px;
   border: 1px solid white;
 }
@@ -631,11 +631,41 @@ nav li a:hover {
   justify-content: space-between;
   padding: 20px;
 }
-.the-and h4 {
+.the-and span p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 166.4%;
   color: white;
 }
 
 .redes-sociais {
   display: flex;
   gap: 30px;
+}
+
+@media screen and (max-width: 1560px) {
+  .image-top img {
+    width: 500px;
+    margin: 0;
+  }
+  .image-top span {
+    left: 300px;
+    top: 400px;
+  }
+  .image-top span img {
+    width: 100px;
+  }
+  .image-top span :nth-last-child(1) {
+    position: absolute;
+    right: 500px;
+    margin: 0;
+  }
+  .container1 {
+    padding: 20px;
+  }
+  .mocaOculos span :nth-last-child(1) {
+    position: absolute;
+    right: 560px;
+    top: 500px;
+  }
 }/*# sourceMappingURL=style.css.map */
