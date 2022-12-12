@@ -31,6 +31,7 @@
 }
 
 .menu {
+  display: block;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,6 +79,47 @@ nav li a:hover {
   transition: 0.2s;
 }
 
+.menu-mobile {
+  display: none;
+}
+.menu-mobile span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-mobile hr {
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  border: 0;
+  margin: 3px;
+}
+.menu-mobile h1 {
+  font-size: 36px;
+  color: white;
+}
+
+.menu-product-mobile {
+  display: none;
+  padding: 20px;
+}
+.menu-product-mobile span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-product-mobile span h1 {
+  font-size: 26px;
+  color: black;
+}
+.menu-product-mobile hr {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  border: 0;
+  margin: 3px;
+}
+
 .call-to-action {
   margin-top: 180px;
 }
@@ -117,6 +159,7 @@ nav li a:hover {
   margin-top: 60px;
   position: relative;
   display: inline-block;
+  display: block;
 }
 .image-top img {
   margin-right: 60px;
@@ -513,6 +556,7 @@ nav li a:hover {
   display: inline-block;
 }
 .mocaOculos span {
+  display: block;
   position: absolute;
   right: -80px;
   top: 60px;
@@ -549,7 +593,7 @@ nav li a:hover {
 .image-footer {
   order: 0;
   position: relative;
-  bottom: 70px;
+  top: -70px;
 }
 .image-footer img {
   width: 500px;
@@ -628,7 +672,7 @@ nav li a:hover {
 .the-and {
   width: 700px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px;
 }
 .the-and span p {
@@ -649,8 +693,7 @@ nav li a:hover {
     margin: 0;
   }
   .image-top span {
-    left: 300px;
-    top: 400px;
+    display: none;
   }
   .image-top span img {
     width: 100px;
@@ -663,9 +706,200 @@ nav li a:hover {
   .container1 {
     padding: 20px;
   }
-  .mocaOculos span :nth-last-child(1) {
-    position: absolute;
-    right: 560px;
-    top: 500px;
+  .mocaOculos span {
+    display: none;
+  }
+  .image-footer img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1458px) {
+  .best-seller {
+    flex-direction: column;
+  }
+  .best-s {
+    text-align: center;
+  }
+  .best-s p {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer {
+    flex-direction: column;
+  }
+  .container-footer {
+    margin: 0 auto;
+    padding-left: 60px;
+  }
+  .image-footer {
+    margin: 0 auto;
+    top: 0;
+  }
+  .image-footer img {
+    width: 300px;
+    margin: 20px;
+  }
+  .mocaOculos img {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .mocaOculos img {
+    width: 300px;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .best-fashion {
+    padding-right: 10px;
+  }
+  .best-fashion h1 {
+    font-size: 50px;
+  }
+  .best-fashion p {
+    font-size: 20px;
+  }
+  .new-colection-and {
+    background-image: none;
+  }
+  .best-fashion {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .best-fashion h1 {
+    font-size: 70px;
+  }
+  .best-fashion p {
+    margin-bottom: 20px;
+  }
+  .dados-fashin {
+    width: 360px;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .dado {
+    margin-top: 20px;
+  }
+  .dado:nth-child(1) {
+    border-right: 0;
+  }
+  .dado:nth-child(2) {
+    border-right: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .deal-of-day {
+    padding-left: 20px;
+  }
+  .best-seller {
+    height: 100%;
+  }
+  .products {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .menu-product {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .image-top {
+    display: none;
+  }
+  .call-to-action {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+  .container-footer {
+    padding: 0;
+  }
+  .background-day-of {
+    height: 100%;
+  }
+  .deal-of-day {
+    padding: 0;
+    margin: 0;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .day-of-wold {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .day-quadrado {
+    justify-content: center;
+  }
+  .mocaOculos {
+    margin: 0 auto;
+  }
+  .mocaOculos img {
+    margin-top: 80px;
+  }
+  .container-footer {
+    text-align: center;
+  }
+  .pas {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .line-footer {
+    width: 100%;
+  }
+  .the-and {
+    width: 100%;
+  }
+  .pesqui {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .menu-product {
+    display: none;
+  }
+  .menu-product-mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 550px) {
+  .the-and span p {
+    font-size: 15px;
+  }
+  .best-fashion h1 {
+    font-size: 36px;
+  }
+  .prod {
+    width: 347px;
+    height: 441px;
+    background-size: 347px;
+    background-repeat: no-repeat;
+  }
+  .new-colection {
+    padding: 10px;
+  }
+  .best-s {
+    padding: 10px;
+  }
+  .day-of-wold {
+    padding: 10px;
+  }
+  .container-footer {
+    padding: 10px;
+  }
+  .redes-sociais {
+    gap: 5px;
+  }
+  .card-roupas {
+    width: 347px;
+    height: 441px;
+    background-size: 347px;
   }
 }/*# sourceMappingURL=style.css.map */
