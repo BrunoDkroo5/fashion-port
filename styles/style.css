@@ -787,9 +787,11 @@ nav li a:hover {
     margin-top: 20px;
   }
   .dado:nth-child(1) {
+    border-bottom: 1px solid black;
     border-right: 0;
   }
   .dado:nth-child(2) {
+    border-bottom: 1px solid black;
     border-right: 0;
   }
 }
@@ -868,13 +870,26 @@ nav li a:hover {
   .menu-product-mobile {
     display: block;
   }
+  .background-top {
+    height: 800px;
+  }
+  .call-to-action {
+    margin-top: 40px;
+  }
+  .new-colection {
+    margin-top: 30px;
+  }
+  .produtos1 {
+    margin-top: 30px;
+  }
 }
 @media screen and (max-width: 550px) {
   .the-and span p {
     font-size: 15px;
   }
   .best-fashion h1 {
-    font-size: 36px;
+    font-size: 46px;
+    line-height: 60px;
   }
   .prod {
     width: 347px;
